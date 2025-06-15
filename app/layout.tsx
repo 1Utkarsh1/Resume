@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   keywords: 'AI researcher, machine learning, NLP, computer vision, full-stack developer, software engineer, Utkarsh Rajput, UNSW, cross-lingual NLP, fake news detection, neural trading strategies',
   authors: [{ name: 'Utkarsh Rajput' }],
   creator: 'Utkarsh Rajput',
+  icons: {
+    icon: '/logo.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
