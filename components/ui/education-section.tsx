@@ -4,7 +4,18 @@ import { motion } from 'framer-motion';
 import { GlowingEffect } from '@/components/ui/glowing-effect';
 import { GraduationCap, Calendar, MapPin, Award, BookOpen, Users } from 'lucide-react';
 
-const educationData = [
+interface EducationEntry {
+  period: string;
+  degree: string;
+  institution: string;
+  location: string;
+  status: "current" | "completed";
+  gpa?: string; // GPA is optional
+  highlights: string[];
+  icon: JSX.Element;
+}
+
+const educationData: EducationEntry[] = [
   {
     period: "2025 – present",
     degree: "B.E. (Hons) Software Engineering",
@@ -22,7 +33,6 @@ const educationData = [
     institution: "Manipal Academy of Higher Education",
     location: "Manipal, India",
     status: "completed",
-    gpa: "3.54/4.0",
     highlights: [
       "AI/ML specialization with focus on Deep Learning",
       "Published heart-disease prediction research",
