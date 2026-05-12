@@ -171,7 +171,7 @@ export function AboutSection() {
                   <div className="flex items-center gap-3">
                     <Award className="w-5 h-5 text-yellow-400" />
                     <div>
-                      <p className="text-white font-semibold">Top 10 - IECSE Freshers' Codesprint 2023</p>
+                      <p className="text-white font-semibold">Top 10 - IECSE Freshers&apos; Codesprint 2023</p>
                       <p className="text-sm text-gray-400">Programming Contest</p>
                     </div>
                   </div>

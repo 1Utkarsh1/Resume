@@ -94,10 +94,10 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to collaborate on something amazing? I'd love to hear about your project or just have a chat about AI, technology, and innovation.
+            Ready to collaborate on something amazing? I&apos;d love to hear about your project or just have a chat about AI, technology, and innovation.
           </p>
         </motion.div>
 
@@ -113,8 +113,8 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Whether you're looking to discuss a potential collaboration, have questions about my research, 
-                or just want to connect with a fellow AI enthusiast, I'm always open to meaningful conversations.
+                Whether you&apos;re looking to discuss a potential collaboration, have questions about my research,
+                or just want to connect with a fellow AI enthusiast, I&apos;m always open to meaningful conversations.
               </p>
             </div>
 

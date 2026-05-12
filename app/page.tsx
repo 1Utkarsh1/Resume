@@ -13,25 +13,16 @@ import { ResearchSection } from '@/components/ui/research-section';
 import { ContactSection } from '@/components/ui/contact-section';
 import { ProjectsSection } from '@/components/ui/projects-section';
 import { motion } from 'framer-motion';
-import dynamic from 'next/dynamic';
-
-// Dynamically import SplineScene with SSR disabled to prevent hydration issues
-const SplineScene = dynamic(() => import('@/components/ui/spline-scene').then(mod => ({ default: mod.SplineScene })), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="animate-pulse text-gray-400">Loading 3D Scene...</div>
-    </div>
-  )
-});
+import { VideoScroll } from '@/components/ui/video-scroll';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#030303] text-white overflow-x-hidden">
+    <div className="min-h-screen text-white overflow-x-hidden relative">
+      <VideoScroll />
       <Navigation />
       
       {/* Hero Section */}
-      <main className="relative">
+      <main className="relative z-10">
         <Sparkles />
         
         <section className="min-h-screen flex relative pt-16 overflow-hidden">
@@ -40,19 +31,9 @@ export default function Home() {
             fill="white"
           />
           
-          {/* Left side - Text content */}
-          <div className="flex-1 flex flex-col justify-center items-start px-4 md:px-8 lg:px-16 relative z-10">
+          {/* Main Hero content centered */}
+          <div className="w-full flex flex-col justify-center items-center px-4 md:px-8 lg:px-16 relative z-10 text-center">
             <TextAnimation />
-          </div>
-          
-          {/* Right side - 3D Model */}
-          <div className="flex-1 relative min-h-screen">
-            <div className="absolute inset-0 w-full h-full">
-              <SplineScene 
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                className="w-full h-full"
-              />
-            </div>
           </div>
         </section>
 
