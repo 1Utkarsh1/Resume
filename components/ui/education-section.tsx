@@ -12,7 +12,7 @@ interface EducationEntry {
   status: "current" | "completed";
   gpa?: string; // GPA is optional
   highlights: string[];
-  icon: JSX.Element;
+  icon: React.ReactNode;
 }
 
 const educationData: EducationEntry[] = [
